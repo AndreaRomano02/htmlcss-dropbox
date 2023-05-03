@@ -17,7 +17,7 @@ body{
 }
 
 .small-container{
-  width: 900px;
+  width: 1000px;
   margin: 0 auto;
 }
 ul{
@@ -82,19 +82,17 @@ ul{
 
 /*! Header */
 header{
-  padding-top: 50px;
   background-color: #B4D0E7;
   height: 800px;
 }
 
-header .titolo{
+header .main-title{
   min-height: 200px;
   background-color: blue;
 }
 
 /** jumbotron */
 header .jumbotron{
-  display: flex;
   background-color: pink;
 }
 
@@ -112,7 +110,45 @@ header .jumbotron{
   background-color: greenyellow;
 
 }
+
+/*! Main */
+/** Tariffs */
+.tariff .title{
+  height: 50px;
+  background-color: red;
+  margin-bottom: 50px;
+}
+
+.tariff .choice{
+  height: 30px;
+  background-color: darkorange;
+}
+
+/** Tariffs Cards  */
+.tariff-card{
+  display: flex;
+  justify-content: space-between;
+}
+
+.tariff-card .card{
+  min-height: 600px;
+  background-color: darkgoldenrod;
+  width: 300px;
+}
+
 /*!  utilities*/
 .border{
   border: 1px dashed black;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.p-top-50{
+  padding-top: 50px;
+}
+
+.m-top-100{
+  margin-top: 100px;
 }

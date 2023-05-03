@@ -8,9 +8,75 @@
 /* General */
 body{
   font-family: 'Open Sans', sans-serif;
+  padding-top: 100px;
 }
 
 .container{
   width: 1200px;
   margin: 0 auto;
+}
+
+ul{
+  list-style-type: none;
+}
+
+/*! Navbar Fixed */
+.navbar-fixed{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+}
+
+.navbar-fixed ul{
+  display: flex;
+}
+/** Navbar left */
+.navbar-left{
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+
+  /*TODO togliere */
+  height: 100%;
+  background-color: pink;
+}
+
+#logo{
+  height: 50px;
+  width: 150px;
+  background-color: lightcoral;
+}
+
+.navbar-left>nav{
+  height: 50px;
+  flex-grow: 1;
+  background-color: lightblue;
+}
+
+/** Navbar right */
+.navbar-right{
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  /*TODO togliere */
+  height: 100%;
+  background-color: dodgerblue;
+}
+
+.navbar-right>nav{
+  height: 50px;
+  flex-grow: 1;
+  background-color: lightblue;
+}
+
+.navbar-right ul{
+  justify-content: flex-end;
+}
+
+/*!  utilities*/
+.border{
+  border: 1px dashed black;
 }

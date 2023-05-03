@@ -21,7 +21,7 @@ body{
   margin: 0 auto;
 }
 
-a{
+li a{
   text-decoration: none;
   color: currentColor;
 }
@@ -32,21 +32,13 @@ ul{
 
 .small-col{
   flex-basis: 30%;
-
-  height: 500px;
-  background-color: red;
 }
 
 .large-col{
   flex-basis: 70%;
-
-  height: 500px;
-  background-color: greenyellow;
-
 }
 .card{
-  min-height: 300px;
-  background-color: darkgoldenrod;
+  border: 1px solid gray;
 }
 
 section{
@@ -54,17 +46,18 @@ section{
 }
 
 .title{
-  margin-bottom: 70px;
-
-  min-height: 50px;
-  background-color: blueviolet;
+  margin-bottom: 50px;
+  font-size: 38px;
+  font-weight: 700;
 }
 
 /*! Buttons */
 .button{
-  padding: 5px 15px;
+  padding: 10px 15px;
   background-color: #0061FF;
   color: white;
+  text-align: center;
+  text-decoration: none;
 }
 
 /*! Navbar Fixed */
@@ -128,28 +121,64 @@ section{
 /*! Header */
 header{
   background-color: #B4D0E7;
-  height: 800px;
+  padding-top: 90px;
 }
 
-header .main-title{
-  min-height: 200px;
-  background-color: blue;
-}
-
-/** jumbotron */
-
-
-/*! Main */
-/** Tariffs */
-.tariff .title{
-  height: 50px;
-  background-color: red;
+#main-title{
+  font-size: 80px;
+  font-weight: 900;
   margin-bottom: 50px;
 }
 
-.tariff .choice{
-  height: 30px;
-  background-color: darkorange;
+/** jumbotron */
+/*? Small Col */
+.jumbotron .free-trial{
+  display: inline-block;
+  margin: 30px 0;
+}
+
+.jumbotron .fa-arrow-down{
+  margin-bottom: 25px;
+}
+
+/*? Large Col */
+.jumbotron .large-col{
+  position: relative;
+}
+
+.large-col img{
+  width: 95%;
+  position: absolute;
+  top: 0;
+}
+
+/*! Main */
+/** Tariffs */
+.tariff{
+  margin-top: 150px;
+}
+
+.choice{
+  font-size: 15px;
+}
+
+.year-choice{
+  margin-left: 50px;
+}
+
+.choice-circle{
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  border: 1px solid gray;
+  border-radius: 50%;
+  margin-right: 3px;
+  cursor: pointer;
+}
+
+.choice-circle.select{
+  border: 5px solid #0061FF;
 }
 
 /*? Tariffs Cards  */
@@ -157,10 +186,52 @@ header .main-title{
   display: flex;
   justify-content: space-between;
   margin: 50px 0;
+
+  font-size: 14px;
 }
 
 .tariff-card .card{
   width: 300px;
+}
+
+/*? Top Card */
+.card .top-card{
+  padding: 10px 0;
+  border-bottom: 1px solid gray;
+  text-align: center;
+}
+
+/*? Main Card */
+.card .main-card{
+  padding: 30px 30px;
+}
+
+.main-card>h3{
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.tariff-price>span{
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.details>*{
+  margin-bottom: 15px;
+}
+
+.details-button{
+  display: block;
+}
+
+.fa-ul {
+  --fa-li-width: 0em;
+  margin-left: 0;
+}
+
+.tariff-plane>li{
+  padding-left: 20px;
+  margin: 20px 0;
 }
 
 /** Contact */
@@ -266,15 +337,33 @@ footer{
   display: flex;
 }
 
-.p-top-50{
+.p-top-m{
   padding-top: 50px;
 }
 
-.m-top-50{
+.m-top-m{
   margin-top: 50px;
+}
+
+.m-sm{
+  margin: 25px 0;
+}
+ 
+.m-bottom-m{
+  margin-bottom: 50px;
+}
+
+.m-bottom-lg{
+  margin-bottom: 85px;
 }
 
 .bg-white{
   background-color: #fff;
   color: black;
+}
+
+.separator-20{
+  border: 1px solid lightgray;
+  width: 20%;
+  margin: 40px 0;
 }

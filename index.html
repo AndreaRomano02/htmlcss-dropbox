@@ -7,6 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Andrea Romano">
   <meta name="description" content="Replica del sito di DropBox">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" href="img/favicon.ico" type="ico/ico">
   <link rel="stylesheet" href="css/style.css">
   <title>DropBox</title>
@@ -41,38 +48,121 @@
   </div>
 
   <!--! Header -->
-  <header class="p-top-50">
+  <header>
     <!--* Jumbotron -->
     <div class="large-container">
-      <div class="main-title border"></div>
-      <div class="jumbotron d-flex border">
-        <div class="small-col border"></div>
-        <div class="large-col border"></div>
+
+      <!--* Main Title -->
+      <h1 id="main-title">Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
+
+      <!--* Jumbotron -->
+      <div class="jumbotron d-flex">
+        <div class="small-col">
+          <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo
+            stesso posto. Dropbox
+            Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il
+            flusso di lavoro esistente.
+          </p>
+          <a href="#" class="button free-trial">Inizia la tua prova gratuita</a>
+          <div class="m-bottom-lg">Annulla in qualsiasi momento</div>
+          <div><i class="fa-solid fa-arrow-down fa-3x"></i></div>
+        </div>
+
+        <div class="large-col">
+          <img src="img/jumbo.png" alt="Show DropBox">
+        </div>
       </div>
     </div>
   </header>
 
+  <!--! Main -->
   <main>
     <div class="small-container">
 
       <!--! Tariffs -->
       <section class="tariff">
 
-        <div class="title border"></div>
-        <div class="choice border">
-          <div class="moth-choice"></div>
-          <div class="year-choice"></div>
+        <h2 class="title">Trova il piano business che fa per te</h2>
+
+        <!--? Choice -->
+        <div class="choice d-flex">
+          <div class="month-choice">
+            <span class="choice-circle select"></span>
+            <span>Fatturazione mensile</span>
+          </div>
+          <div class="year-choice">
+            <span class="choice-circle"></span>
+            <span>Fatturazione annuale</span>
+          </div>
         </div>
 
         <!--? Tariffs Cards -->
-        <div class="tariff-card border">
-          <div class="card border"></div>
-          <div class="card border"></div>
-          <div class="card border"></div>
+        <div class="tariff-card">
+
+          <!--* First Card -->
+          <div class="card">
+            <div class="top-card">
+              <i class="fa-solid fa-user"></i>
+              <span>Singolo</span>
+            </div>
+            <div class="main-card">
+              <!-- Title -->
+              <h3>Professional</h3>
+              <!-- Price -->
+              <div class="tariff-price">
+                <span><b>€ 12.00</b></span>
+                <div>/mese</div>
+              </div>
+
+              <!-- Details -->
+              <div class="details m-sm">
+                <!-- utent -->
+                <div class="utent-details">
+                  <i class="fa-solid fa-user"></i>
+                  <span>1 utente</span>
+                </div>
+
+                <!-- Space -->
+                <div class="space-details">
+                  <i class="fa-solid fa-folder"></i>
+                  <span>5 TB di spazio di archiviazione sicuro</span>
+                </div>
+
+                <!-- Funcions -->
+                <div class="function-details">
+                  <i class="fa-solid fa-share-nodes"></i>
+                  <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
+                </div>
+              </div>
+
+              <!-- Button -->
+              <a href="#" class="button details-button">Prova gratis per 30 giorni</a>
+              <div class="m-sm">opure <a href="#">acquista ora</a></div>
+
+              <!-- Separator -->
+              <div class="separator-20"></div>
+
+              <!-- Plane-->
+              <h4>Punti Salienti del piano</h4>
+              <ul class="tariff-plane fa-ul">
+                <li>
+                  <span class="fa-li"><i class="fa-solid fa-check" style="color: #0061ff;"></i></span> Invia file fino
+                  a 100 GB con Dropbox Transfert
+                </li>
+                <li>
+                  <span class="fa-li"><i class="fa-solid fa-check" style="color: #0061ff;"></i></span>Cartelle offline
+                  su dispositivi mobili
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+
         </div>
 
         <!--?  Contact -->
-        <div class="contact card border"></div>
+        <div class="contact card"></div>
       </section>
 
       <!--! Partenr -->
@@ -142,7 +232,7 @@
         <div class="foot-col border"></div>
         <div class="foot-col border"></div>
       </div>
-      <div class="footer-bottom m-top-50"></div>
+      <div class="footer-bottom m-top-m"></div>
     </div>
   </footer>
 </body>

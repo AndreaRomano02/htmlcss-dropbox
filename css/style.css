@@ -8,7 +8,7 @@
 /*! General */
 body{
   font-family: 'Open Sans', sans-serif;
-  padding-top: 100px;
+  padding-top: 90px;
 }
 
 .large-container{
@@ -19,6 +19,11 @@ body{
 .small-container{
   width: 1000px;
   margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+  color: currentColor;
 }
 
 ul{
@@ -55,6 +60,13 @@ section{
   background-color: blueviolet;
 }
 
+/*! Buttons */
+.button{
+  padding: 5px 15px;
+  background-color: #0061FF;
+  color: white;
+}
+
 /*! Navbar Fixed */
 .navbar-fixed{
   display: flex;
@@ -62,33 +74,33 @@ section{
   top: 0;
   left: 0;
   right: 0;
-  height: 100px;
+  z-index: 1;
+  height: 90px;
+  background: #fff;
+  padding: 0 10px;
 }
 
 .navbar-fixed ul{
   display: flex;
+  align-items: center;
+  height: 100%;
 }
+
+
 /** Navbar left */
 .navbar-left{
   flex: 0 0 50%;
   display: flex;
   align-items: center;
-
-  /*TODO togliere */
-  height: 100%;
-  background-color: pink;
-}
-
-#logo{
-  height: 50px;
-  width: 150px;
-  background-color: lightcoral;
 }
 
 .navbar-left>nav{
-  height: 50px;
   flex-grow: 1;
-  background-color: lightblue;
+  height: 100%;
+}
+
+.navbar-fixed li{
+  padding-left: 30px;
 }
 
 /** Navbar right */
@@ -96,19 +108,21 @@ section{
   flex: 0 0 50%;
   display: flex;
   align-items: center;
-  /*TODO togliere */
   height: 100%;
-  background-color: dodgerblue;
 }
 
 .navbar-right>nav{
-  height: 50px;
+  display: flex;
+  justify-content: flex-end;
   flex-grow: 1;
-  background-color: lightblue;
+  height: 100%;
 }
 
-.navbar-right ul{
-  justify-content: flex-end;
+.navbar-right .log-in{
+  margin-left: 30px;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 /*! Header */
@@ -258,4 +272,9 @@ footer{
 
 .m-top-50{
   margin-top: 50px;
+}
+
+.bg-white{
+  background-color: #fff;
+  color: black;
 }

@@ -216,6 +216,33 @@ header .main-title{
   background-color: red;
 }
 
+/*! Footer */
+footer{
+  margin-top: 100px;
+  background-color: black;
+  color: white;
+}
+
+/** Footer Top */
+.footer-top{
+  display: flex;
+  gap: 50px;
+}
+
+.footer-top .foot-col{
+  flex-basis: calc((100% - 100px) / 5);
+
+  min-height: 300px;
+  background-color: white;
+}
+
+/** Footer Bottom */
+.footer-bottom{
+  min-height: 200px;
+  border: 1px dashed white;
+}
+
+
 /*!  utilities*/
 .border{
   border: 1px dashed black;

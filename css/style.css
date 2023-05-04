@@ -5,6 +5,18 @@
   box-sizing: border-box;
 }
 
+/* Custom Properties */
+:root{
+  --designit: #A2D39B;
+  --asu: #61082B;
+  --uf: #0093CE;
+  --topps: #FF1C1C;
+  --wbr: #D5001F;
+  --hearst: #B4D0E7;
+  --planet: #0D2481;
+  --channel: #FFD830;
+}
+
 /*! General */
 body{
   font-family: 'Open Sans', sans-serif;
@@ -295,26 +307,79 @@ header{
 }
 
 /** Client */
+.client .title{
+  width: 60%;
+}
+
 .client .designit{
   display: flex;
+  margin-top: 150px;
 }
 
 .client .square-col{
   flex-basis: calc(100% / 3);
-
-  min-height: 500px;
-}
-
-/*? Show Partner */
-.partner-box{
   display: flex;
   flex-wrap: wrap;
 }
 
-.partner-box .show-partner{
-  flex-basis: 50%;
+
+/*? Logo Partner */
+.partner-logo{
+  height: calc(100vw / 6);
   
-  background-color: aqua;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-logo img{
+  filter: invert(1);
+  max-width: 50%;
+}
+
+/*? Background logo */
+.bg-designit{
+  background-color: var(--designit);
+}
+
+.bg-asu{
+  background-color: var(--asu);
+}
+
+.bg-uf{
+  background-color: var(--uf);
+}
+
+.bg-topps{
+  background-color: var(--topps);
+}
+
+.bg-wbr{
+  background-color: var(--wbr);
+}
+
+.bg-hearst{
+  background-color: var(--hearst);
+}
+
+.bg-planet{
+  background-color: var(--planet);
+}
+
+.bg-channel{
+  background-color: var(--channel);
+}
+
+/*? Middle Square */
+.client .square-col.middle{
+  flex-direction: column;
+  padding: 40px;
+  background-color: #F5F5F5;
+}
+
+.middle .designit-logo{
+  max-width: 50%;
 }
 
 

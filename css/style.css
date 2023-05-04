@@ -42,7 +42,7 @@ ul{
 }
 
 section{
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 .title{
@@ -146,7 +146,7 @@ header{
   position: relative;
 }
 
-.large-col img{
+.jumbotron .large-col img{
   width: 95%;
   position: absolute;
   top: 0;
@@ -235,12 +235,39 @@ header{
 }
 
 /** Partner */
+.partner{
+  display: flex;
+}
+/* ? Large col */
 .partner .large-col{
   flex-basis: 60%;
 }
 
+.partner-img{
+  max-width: 100%;
+  display: block;
+}
+
+/* ? Small col */
 .partner .small-col{
   flex-basis: 40%;
+  padding: 50px 30px;
+}
+
+.partner h3{
+  font-size: 1.5rem;
+}
+
+.partner p{
+  margin: 20px 0;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.partner .button{
+  display: inline-block;
+  margin: 15px 0;
+  border: 1px solid black;
 }
 
 /** Description */
@@ -359,7 +386,7 @@ footer{
   margin-bottom: 85px;
 }
 
-.bg-white{
+.button.bg-white{
   background-color: #fff;
   color: black;
 }

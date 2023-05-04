@@ -401,13 +401,26 @@ header{
 
 /** FAQ */
 .FAQ{
-  min-height: 500px;
-  background-color: red;
+  font-size: 0.9rem;
+  border-bottom: 1px solid gray;
+  padding: 40px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.FAQ:first-of-type{
+  border-top: 1px solid gray;
+}
+
+.FAQ span{
+  padding: 0 30px;
 }
 
 /*! Footer */
 footer{
-  margin-top: 100px;
+  margin-top: 150px;
   background-color: black;
   color: white;
 }

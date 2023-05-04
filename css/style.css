@@ -234,8 +234,6 @@ header{
   margin: 20px 0;
 }
 
-/** Contact */
-
 /** Partner */
 .partner .large-col{
   flex-basis: 60%;
@@ -341,6 +339,10 @@ footer{
   padding-top: 50px;
 }
 
+.m-top-sm{
+  margin-top: 25px;
+}
+
 .m-top-m{
   margin-top: 50px;
 }
@@ -366,4 +368,8 @@ footer{
   border: 1px solid lightgray;
   width: 20%;
   margin: 40px 0;
+}
+
+.f-size-09{
+  font-size: 0.9rem;
 }

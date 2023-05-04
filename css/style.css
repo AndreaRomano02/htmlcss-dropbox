@@ -69,6 +69,7 @@ section{
   color: white;
   text-align: center;
   text-decoration: none;
+  display: block;
 }
 
 /*! Navbar Fixed */
@@ -231,10 +232,6 @@ header{
   margin-bottom: 15px;
 }
 
-.details-button{
-  display: block;
-}
-
 .fa-ul {
   --fa-li-width: 0em;
   margin-left: 0;
@@ -391,8 +388,15 @@ header{
 
 .try-free{
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: baseline;
+
+  padding: 100px 0;
+}
+
+.try-free .title{
+  color: #61082B;
+  width: 70%;
 }
 
 /** FAQ */

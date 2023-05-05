@@ -9,11 +9,9 @@
   <meta name="description" content="Replica del sito di DropBox">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" href="img/favicon.ico" type="ico/ico">
@@ -26,20 +24,144 @@
   <!--! Navbar Fixed -->
   <div class="navbar-fixed">
     <div class="navbar-left">
-      <img id="logo" src="img/logo-small.png" alt="Logo DropBox">
-      <nav>
+      <a href="#">
+        <img id="logo" src="img/logo-small.png" alt="Logo DropBox">
+      </a>
+      <nav class="main-nav">
         <ul>
-          <li><a href="#">Perchè Dropbox</a></li>
-          <li><a href="#">Funzioni</a></li>
-          <li><a href="#">Piani e Prezzi </a></li>
+          <li>
+            <a href="#">Perchè Dropbox</a>
+            <nav class="fixed-banner">
+              <div class="equal-col">
+                <ul>
+                  <li>
+                    <h4>Panoramica</h4>
+                  </li>
+                  <li><a href="#">Ispirati</a></li>
+                  <li><a href="#">Cosa dicono i clienti</a></li>
+                  <li><a href="#">Integrazioni di app</a></li>
+                  <li><a href="#">Risorse</a></li>
+                </ul>
+              </div>
+              <div class="equal-col">
+                <ul>
+                  <li>
+                    <h4>Lavora al meglio con Dropbox</h4>
+                  </li>
+                  <li><a href="#">Condividi file</a></li>
+                  <li><a href="#">Archivia e organizza</a></li>
+                  <li><a href="#">Sincronizza i tuoi dispositivi</a></li>
+                  <li><a href="#">Connetti tra loro i membri del team in remoto</a></li>
+                  <li><a href="#">Fai avanzare il tuo lavoro</a></li>
+                  <li><a href="#">Backup smepre attivo</a></li>
+                  <li><a href="#">Firma un documento</a></li>
+                  <li><a href="#">Monitora i dati</a></li>
+                </ul>
+              </div>
+            </nav>
+          </li>
+          <li>
+            <a href="#">Funzioni</a>
+            <nav class="fixed-banner">
+              <div class="equal-col">
+                <ul>
+                  <li>
+                    <h4>Ruoli</h4>
+                  </li>
+                  <li><a href="#">Ispirati</a></li>
+                  <li><a href="#">Cosa dicono i clienti</a></li>
+                </ul>
+              </div>
+              <div class="equal-col">
+                <ul>
+                  <li>
+                    <h4>Salva su DropBox</h4>
+                  </li>
+                  <li><a href="#">Condividi file</a></li>
+                </ul>
+              </div>
+            </nav>
+          </li>
+          <li>
+            <a href="#">Piani e Prezzi </a>
+            <nav class="fixed-banner">
+              <div class="equal-col">
+                <ul>
+                  <li>
+                    <h4>Piani</h4>
+                  </li>
+                  <li><a href="#">Ispirati</a></li>
+                  <li><a href="#">Cosa dicono i clienti</a></li>
+                  <li><a href="#">Integrazioni di app</a></li>
+                  <li><a href="#">Risorse</a></li>
+                </ul>
+              </div>
+              <div class="equal-col">
+                <ul>
+                  <li>
+                    <h4>Prezzi</h4>
+                  </li>
+                  <li><a href="#tariff">Professional</a></li>
+                  <li><a href="#tariff">Advanced</a></li>
+                  <li><a href="#tariff">Enterprice</a></li>
+                </ul>
+              </div>
+            </nav>
+          </li>
         </ul>
       </nav>
     </div>
     <div class="navbar-right">
-      <nav>
+      <nav class="main-nav">
         <ul>
-          <li><a href="#">Supporto</a></li>
-          <li><a href="#">Contatta l'ufficio vendite</a></li>
+          <li>
+            <a href="#">Supporto</a>
+            <nav class="fixed-banner">
+              <div class="equal-col">
+                <ul>
+                  <li>
+                    <a href="#contact">
+                      <h4>Contatti</h4>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="equal-col">
+                <ul>
+                  <li>
+                    <h4>Prezzi</h4>
+                  </li>
+                  <li><a href="#tariff">Professional</a></li>
+                  <li><a href="#tariff">Advanced</a></li>
+                  <li><a href="#tariff">Enterprice</a></li>
+                </ul>
+              </div>
+            </nav>
+          </li>
+          <li>
+            <a href="#">Contatta l'ufficio vendite</a>
+            <nav class="fixed-banner">
+              <div class="equal-col">
+                <ul>
+                  <li>
+                    <a href="#contact">
+                      <h4>Contatti</h4>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="equal-col">
+                <ul>
+                  <li>
+                    <h4>Prezzi</h4>
+                  </li>
+                  <li><a href="#tariff">Professional</a></li>
+                  <li><a href="#tariff">Advanced</a></li>
+                  <li><a href="#tariff">Enterprice</a></li>
+                </ul>
+              </div>
+            </nav>
+          </li>
         </ul>
         <div class="log-in">
           <a class="button bg-white" href="#">Accedi</a>
@@ -70,7 +192,7 @@
             </p>
             <a href="#" class="button free-trial">Inizia la tua prova gratuita</a>
             <div class="m-bottom-lg">Annulla in qualsiasi momento</div>
-            <a class="arrow-down" href="#tariff"><i class="fa-solid fa-arrow-down fa-3x"></i></a>
+            <a class="arrow-down" href="#tariff"><i class="fa-solid fa-arrow-down fa-bounce fa-3x"></i></a>
           </div>
 
           <div class="large-col">
@@ -154,13 +276,11 @@
               <h4>Punti Salienti del piano</h4>
               <ul class="fa-ul">
                 <li>
-                  <span class="fa-li"><i class="fa-solid fa-check"
-                      style="color: #0061ff;"></i></span>
+                  <span class="fa-li"><i class="fa-solid fa-check" style="color: #0061ff;"></i></span>
                   Invia file fino a 100 GB con Dropbox Transfert
                 </li>
                 <li>
-                  <span class="fa-li"><i class="fa-solid fa-check"
-                      style="color: #0061ff;"></i></span>
+                  <span class="fa-li"><i class="fa-solid fa-check" style="color: #0061ff;"></i></span>
                   Cartelle offline su dispositivi mobili
                 </li>
               </ul>
@@ -217,28 +337,23 @@
               <h4>Punti Salienti del piano</h4>
               <ul class="tariff-plane fa-ul">
                 <li>
-                  <span class="fa-li"><i class="fa-solid fa-check"
-                      style="color: #0061ff;"></i></span>
+                  <span class="fa-li"><i class="fa-solid fa-check" style="color: #0061ff;"></i></span>
                   Nessun limite di spazio per i file
                 </li>
                 <li>
-                  <span class="fa-li"><i class="fa-solid fa-check"
-                      style="color: #0061ff;"></i></span>
+                  <span class="fa-li"><i class="fa-solid fa-check" style="color: #0061ff;"></i></span>
                   Cartelle ofline su dispositivi mobili
                 </li>
                 <li>
-                  <span class="fa-li"><i class="fa-solid fa-check"
-                      style="color: #0061ff;"></i></span>
+                  <span class="fa-li"><i class="fa-solid fa-check" style="color: #0061ff;"></i></span>
                   Risparmi del 50% rispetto alle iscrizioni singole
                 </li>
                 <li>
-                  <span class="fa-li"><i class="fa-solid fa-check"
-                      style="color: #0061ff;"></i></span>
+                  <span class="fa-li"><i class="fa-solid fa-check" style="color: #0061ff;"></i></span>
                   Possibilità di inserire nuovi membri del team
                 </li>
                 <li>
-                  <span class="fa-li"><i class="fa-solid fa-check"
-                      style="color: #0061ff;"></i></span>
+                  <span class="fa-li"><i class="fa-solid fa-check" style="color: #0061ff;"></i></span>
                   Gestione dei permessi in base ai ruoli
                 </li>
               </ul>
@@ -295,18 +410,15 @@
               <h4>Punti Salienti del piano</h4>
               <ul class="tariff-plane fa-ul">
                 <li>
-                  <span class="fa-li"><i class="fa-solid fa-check"
-                      style="color: #0061ff;"></i></span>
+                  <span class="fa-li"><i class="fa-solid fa-check" style="color: #0061ff;"></i></span>
                   Cartelle ofline su dispositivi mobili
                 </li>
                 <li>
-                  <span class="fa-li"><i class="fa-solid fa-check"
-                      style="color: #0061ff;"></i></span>
+                  <span class="fa-li"><i class="fa-solid fa-check" style="color: #0061ff;"></i></span>
                   Servizio assistenza 24/h
                 </li>
                 <li>
-                  <span class="fa-li"><i class="fa-solid fa-check"
-                      style="color: #0061ff;"></i></span>
+                  <span class="fa-li"><i class="fa-solid fa-check" style="color: #0061ff;"></i></span>
                   Possibilità di personalizzazione totale
                 </li>
               </ul>
@@ -316,7 +428,7 @@
         </div>
 
         <!--?  Contact -->
-        <div class="card">
+        <div id="contact" class="card">
           <div class="top-card">
             <i class="fa-solid fa-building"></i>
             <span>Team</span>
@@ -686,7 +798,5 @@
 
 
 <!-- EXTRA
-Click sulla freccia che ti porta alla sezione sotto
-Hover su fixed esce la tendina come sul sito originale
 Tendina della chat che esce in basso a destra
 -->

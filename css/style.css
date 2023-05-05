@@ -50,6 +50,10 @@ ul{
   flex-basis: 70%;
 }
 
+.equal-col{
+  flex-basis: 50%;
+}
+
 .card{
   border: 1px solid gray;
   font-size: 14px;
@@ -99,23 +103,44 @@ section{
   padding: 0 10px;
 }
 
-.navbar-fixed ul{
+.main-nav>ul{
   display: flex;
   align-items: center;
   height: 100%;
 }
 
-.navbar-fixed li{
+.main-nav>ul>li{
   margin-left: 30px;
   line-height: 90px;
   height: 100%;
 }
 
-.navbar-fixed nav{
+.navbar-fixed .main-nav{
   display: flex;
   height: 100%;
   align-items: center;
 }
+
+/** Banner */
+.fixed-banner{
+  background-color: #ededed;
+  line-height: normal;
+  font-size: 13px;
+  padding: 15px 25px;
+
+  display: flex;
+  gap: 150px;
+
+  position: fixed;
+  top: 90px;
+
+  display: none;
+}
+
+.fixed-banner li{
+  margin-bottom: 15px;
+}
+
 /** Navbar left */
 .navbar-left{
   display: flex;
@@ -134,16 +159,27 @@ section{
   align-items: center;
 }
 
-/** Functions */
-.navbar-fixed li:hover{
+/*? Functions */
+.main-nav>ul>li:hover{
   border-bottom: 5px solid blue;
+}
+
+.main-nav>ul>li:hover>a{
   color: blue;
 }
 
-.navbar-fixed li:active{
-  box-shadow: 0 5px blue;
-  transform: translateY(2px);
+/*? Function on Banners */
+.fixed-banner a:hover{
+  text-decoration: underline;
 }
+
+.main-nav>ul>li:hover .fixed-banner{
+  display: flex;
+}
+/* 
+.navbar-fixed li:active{
+  transform: translateY(2px);
+} */
 
 /*! Header */
 header{
@@ -187,6 +223,10 @@ header{
 
 /*! Main */
 /** Tariffs */
+#tariff{
+  padding-top: 100px;
+}
+
 .choice{
   font-size: 15px;
 }

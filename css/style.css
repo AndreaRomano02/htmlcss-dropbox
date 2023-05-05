@@ -490,6 +490,121 @@ header{
 }
 
 
+/*! Chat */
+.chat{
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+
+  background-color: white;
+  border: 1px solid black;
+
+  width: 300px;
+  
+}
+
+/** Header Chat */
+.chat .header-chat{
+  background-color: #0D2481;
+  color: white;
+  padding: 10px 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-chat .title-chat{
+  flex-grow: 1;
+  text-align: center;
+}
+
+.control-chat{
+  cursor: pointer;
+}
+
+/** Main Chat */
+.main-chat{
+  display: none;
+  height: 400px;
+}
+/*? Message */
+.message{
+  display: flex;
+  padding: 20px 10px;
+}
+
+.message-profile img{
+  height: 35px;
+  display: block;
+}
+
+.message-profile .name-chat{
+  font-size: 12px;
+}
+
+.message-body{
+  font-size: 14px;
+
+  align-self: center;
+  background-color: lightgray;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+/*? Text message */
+.text-message{
+  padding: 0 10px;
+  position: absolute;
+  bottom: 50px;
+  border-top: 1px solid gray;  
+
+  display: flex;
+}
+
+#text-message{
+  width: 100%;
+  border: none;
+  resize: none;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+#send-message{
+  color: dodgerblue;
+}
+
+/*? Footer message */
+.footer-message{
+  font-size: 10px;
+  text-align: center;
+  padding: 0 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer-message img{
+  height: 30px;
+  display: block;
+}
+
+/** Funcions */
+@keyframes uppear-chat {
+  from {bottom: -380px;}
+  to {bottom: 10px;}
+}
+
+.chat:hover{
+  animation: uppear-chat 2s 1;
+}
+
+.chat:hover .main-chat{
+  display: block;
+}
+
 
 /*! Footer */
 footer{
